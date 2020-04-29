@@ -98,7 +98,7 @@ namespace custom_queries
                 // очищаем старые значения
                 comboBoxValues.Items.Clear();
                 // добавляем новые значения в comboBox
-                comboBoxValues.Items.AddRange(qr.Query(f.Table_name).Select(f.Field_name).WhereNotNull(f.Field_name).Get<string>().ToArray());
+                comboBoxValues.Items.AddRange(qr.Query(f.Table_name).Select(f.Field_name).WhereNotNull(f.Field_name).Distinct().Get<string>().ToArray());
             }
         }
 
@@ -209,8 +209,12 @@ namespace custom_queries
             using NpgsqlConnection connection = new NpgsqlConnection(connectionString);
             connection.Open();
             var qf = new QueryFactory(connection, postgres_compiler);
-            foreach (var row in qf.FromQuery(Generate()).Get())
-                dataGridViewRes.Rows.Add(((IDictionary<string, object>)row).Values.ToArray());
+            var query = Generate();
+            if (query != null)
+            {
+                foreach (var row in qf.FromQuery(query).Get())
+                    dataGridViewRes.Rows.Add(((IDictionary<string, object>)row).Values.ToArray());
+            }
         }
 
 
@@ -260,7 +264,11 @@ namespace custom_queries
                         pairTable.Push(new_pt2);
                 }
             }
-
+            if (fields.Count == 0)
+            {
+                MessageBox.Show("не указаны столбцы для вывода");
+                return null;
+            }
             // generate sql string
             var q = new Query()
                 .Select(fields.ToArray())

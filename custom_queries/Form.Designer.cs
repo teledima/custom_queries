@@ -90,7 +90,7 @@
             this.tabControl1.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(668, 406);
+            this.tabControl1.Size = new System.Drawing.Size(666, 385);
             this.tabControl1.TabIndex = 0;
             // 
             // fiels_page
@@ -108,7 +108,7 @@
             this.fiels_page.Margin = new System.Windows.Forms.Padding(4);
             this.fiels_page.Name = "fiels_page";
             this.fiels_page.Padding = new System.Windows.Forms.Padding(4);
-            this.fiels_page.Size = new System.Drawing.Size(660, 380);
+            this.fiels_page.Size = new System.Drawing.Size(658, 359);
             this.fiels_page.TabIndex = 0;
             this.fiels_page.Text = "Поля";
             // 
@@ -213,7 +213,7 @@
             this.page_conditions.Margin = new System.Windows.Forms.Padding(4);
             this.page_conditions.Name = "page_conditions";
             this.page_conditions.Padding = new System.Windows.Forms.Padding(4);
-            this.page_conditions.Size = new System.Drawing.Size(660, 380);
+            this.page_conditions.Size = new System.Drawing.Size(658, 359);
             this.page_conditions.TabIndex = 1;
             this.page_conditions.Text = "Условия";
             this.page_conditions.UseVisualStyleBackColor = true;
@@ -378,7 +378,7 @@
             this.page_orders.Location = new System.Drawing.Point(4, 22);
             this.page_orders.Margin = new System.Windows.Forms.Padding(4);
             this.page_orders.Name = "page_orders";
-            this.page_orders.Size = new System.Drawing.Size(660, 380);
+            this.page_orders.Size = new System.Drawing.Size(658, 359);
             this.page_orders.TabIndex = 2;
             this.page_orders.Text = "Порядок";
             this.page_orders.UseVisualStyleBackColor = true;
@@ -513,7 +513,7 @@
             this.page_result.Location = new System.Drawing.Point(4, 22);
             this.page_result.Margin = new System.Windows.Forms.Padding(4);
             this.page_result.Name = "page_result";
-            this.page_result.Size = new System.Drawing.Size(660, 380);
+            this.page_result.Size = new System.Drawing.Size(658, 359);
             this.page_result.TabIndex = 3;
             this.page_result.Text = "Результат";
             this.page_result.UseVisualStyleBackColor = true;
@@ -528,15 +528,15 @@
             this.dataGridViewRes.Name = "dataGridViewRes";
             this.dataGridViewRes.ReadOnly = true;
             this.dataGridViewRes.RowHeadersWidth = 51;
-            this.dataGridViewRes.Size = new System.Drawing.Size(649, 366);
+            this.dataGridViewRes.Size = new System.Drawing.Size(635, 321);
             this.dataGridViewRes.TabIndex = 0;
             // 
             // button_execute_query
             // 
-            this.button_execute_query.Location = new System.Drawing.Point(509, 426);
+            this.button_execute_query.Location = new System.Drawing.Point(534, 427);
             this.button_execute_query.Margin = new System.Windows.Forms.Padding(4);
             this.button_execute_query.Name = "button_execute_query";
-            this.button_execute_query.Size = new System.Drawing.Size(169, 28);
+            this.button_execute_query.Size = new System.Drawing.Size(144, 28);
             this.button_execute_query.TabIndex = 2;
             this.button_execute_query.Text = "Выполнить запрос";
             this.button_execute_query.UseVisualStyleBackColor = true;
@@ -544,7 +544,7 @@
             // 
             // button_look_sql
             // 
-            this.button_look_sql.Location = new System.Drawing.Point(357, 426);
+            this.button_look_sql.Location = new System.Drawing.Point(382, 427);
             this.button_look_sql.Margin = new System.Windows.Forms.Padding(4);
             this.button_look_sql.Name = "button_look_sql";
             this.button_look_sql.Size = new System.Drawing.Size(144, 28);
@@ -557,7 +557,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(696, 463);
+            this.ClientSize = new System.Drawing.Size(692, 474);
             this.Controls.Add(this.button_look_sql);
             this.Controls.Add(this.button_execute_query);
             this.Controls.Add(this.tabControl1);
